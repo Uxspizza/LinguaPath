@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#27496b">
+  <meta name="description" content="LinguaPath — справочные материалы по английскому языку, словарь, грамматика, практика и обучающие игры.">
+  <title>Локальная панель материалов — LinguaPath</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="admin">
+  <div id="site-header"></div>
+  <main class="container">
+
+    <section class="page-hero"><div class="breadcrumbs"><a href="index.html">Главная</a> / Панель материалов</div><p class="eyebrow">Демонстрационный инструмент</p><h1>Добавление материалов</h1><p>Позволяет добавить пользовательские карточки в каталог на текущем устройстве без редактирования файлов.</p></section>
+    <section class="section"><div class="notice">Это локальный прототип, а не защищённая административная панель. Данные хранятся только в браузере и не синхронизируются. Не публикуйте страницу как реальную CMS без серверной авторизации.</div><div class="page-columns"><form class="panel" id="admin-form"><div class="field-group"><label for="admin-title">Название материала</label><input class="field" id="admin-title" required placeholder="Например: Future Simple"></div><div class="field-group"><label for="admin-category">Категория</label><select class="select" id="admin-category"><option>Грамматика</option><option>Словарь</option><option>Разговорная речь</option><option>Письмо</option><option>Топики</option><option>Другое</option></select></div><div class="field-group"><label for="admin-desc">Краткое описание</label><textarea class="textarea" id="admin-desc" rows="4" required placeholder="Что пользователь узнает из материала"></textarea></div><div class="field-group"><label for="admin-url">Ссылка на страницу</label><input class="field" id="admin-url" placeholder="catalog.html"></div><div id="admin-message" class="notice hidden"></div><button class="button" type="submit">Добавить материал →</button></form><div class="panel"><h2>Добавленные материалы</h2><div id="custom-materials-list"></div><p class="small-muted">Материалы появятся в локальном каталоге и результатах поиска, пока данные браузера не очищены.</p></div></div></section>
+
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
